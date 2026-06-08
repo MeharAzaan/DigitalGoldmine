@@ -1,16 +1,17 @@
+import 'package:digital_goldmine/View/checkin.dart';
 import 'package:digital_goldmine/View/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
+const darkBackgroundColor = Color(0xFF1A1A1A);
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const darkBackgroundColor = Color(0xFF212121);
+    
 
     return MaterialApp(
       title: 'Flutter Demo',
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark, // Switches default text/icon themes to light so they are visible
         ),
       ),
-      home: const SplashScreen(),
+      home: const Checkin(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:digital_goldmine/View/checkin.dart';
+import 'package:digital_goldmine/View/signup.dart';
 import 'package:digital_goldmine/View/splash.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark, // Switches default text/icon themes to light so they are visible
         ),
       ),
-      home: const Checkin(),
+      home: const signUp(),
     );
   }
 }

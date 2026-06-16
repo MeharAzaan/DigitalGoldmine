@@ -61,7 +61,3 @@ Widget button({required String text,required VoidCallback onPressed , required C
                 ),onPressed: onPressed, child: Text(text,style: TextStyle(color: Colors.white)),),),
   );
 }
-Widget buttonandicon({required String text,required VoidCallback onPressed , required Color backgroundColor, required IconData icon}){
-  return ElevatedButton.icon(onPressed: onPressed, icon: Icon(icon), label: Text(text));
-
-}

@@ -34,7 +34,11 @@ class _signUpState extends State<signUp> {
   child: Container(
     width: double.infinity,
 
-    decoration: const BoxDecoration(
+    decoration:  BoxDecoration(
+      border: Border.all(
+      color: Colors.white38, // Border color
+      width: 1.0,         // Border width
+    ),
       shape:BoxShape.rectangle,
         borderRadius: BorderRadius.only(
           bottomLeft: Radius.circular(20),
@@ -64,11 +68,21 @@ class _signUpState extends State<signUp> {
               textandfeild(title: ' Email', hint: 'Email@email.com', isPassword: false),
               textandfeild(title: ' Password', hint: 'Enter your password', isPassword: true),
               textandfeild(title: ' Confirm Password', hint: 'Confirm your password', isPassword: true),
-              textandfeild(title: ' Phone Number', hint: 'Enter your phone number', isPassword: false),
               button(text: 'SIGN UP', onPressed: (){}, backgroundColor: const Color(0x42FFFFFF)),
-              button(text: 'SIGN UP', onPressed: (){}, backgroundColor: const Color(0x42FFFFFF)),
-              button(text: 'SIGN UP', onPressed: (){}, backgroundColor: const Color(0x42FFFFFF)),
-              
+             buttonandicon(text: 'Continue with Google', onPressed: (){}, backgroundColor: Colors.white, icon: null, textcolor: Colors.black),
+              buttonandicon(text: 'Sign Up with Apple', onPressed: (){}, backgroundColor: Colors.black, icon: Icons.apple, textcolor: Colors.white),
+
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  spacing:5,
+                  children: [
+                    Text('Already have an account?',style: TextStyle(color: Colors.white,fontSize: 15),),
+                    Text('Login',style: TextStyle(color: Colors.yellow,fontSize: 15),)
+                  ],
+                ),
+              ),
             ]
           ),
         ),
@@ -111,5 +125,16 @@ Widget textandfeild({required String title,required String hint ,required  bool 
                     ),
                   )
                 ],
+  );
+}
+Widget buttonandicon({required String text,required VoidCallback onPressed , required Color backgroundColor, required IconData ?icon,required Color textcolor}){
+  return Padding(
+    padding: const EdgeInsets.only(top:9),
+    child: SizedBox(height: 50,width: double.infinity,child: ElevatedButton.icon(style:ElevatedButton.styleFrom(
+                     side: BorderSide(color: Colors.white24, width: 1),
+                  shape:RoundedRectangleBorder(borderRadius:BorderRadiusGeometry.circular(13),),
+                  backgroundColor:backgroundColor,
+                
+                ),onPressed: onPressed, icon:icon==null?Image.asset('Assets/images/google.png'): Icon(icon,size: 20,color:textcolor), label: Text(text, style: TextStyle(color: textcolor))),),
   );
 }

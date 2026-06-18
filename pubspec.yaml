@@ -63,6 +63,23 @@ flutter:
     - Assets/images/splashlogo.png
     - Assets/images/Statisticscard.png
     - Assets/images/google.png
+    - Assets/images/a1.png
+    - Assets/images/a2.png
+    - Assets/images/a3.png
+    - Assets/images/a4.png
+    - Assets/images/a5.png
+    - Assets/images/a6.png
+    - Assets/images/a7.png
+    - Assets/images/a8.png
+    - Assets/images/a9.png
+    - Assets/images/a10.png
+    - Assets/images/a11.png
+    - Assets/images/a12.png
+    - Assets/images/Dropzone.png
+    - Assets/images/oneof2.png
+    - Assets/images/twoof2.png
+    - Assets/images/firstimage.png
+    - Assets/images/secondimage.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

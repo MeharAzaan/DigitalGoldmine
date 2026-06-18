@@ -1,9 +1,17 @@
-import 'package:digital_goldmine/View/checkin.dart';
-import 'package:digital_goldmine/View/forgetpassword.dart';
-import 'package:digital_goldmine/View/login.dart';
-import 'package:digital_goldmine/View/signup.dart';
-import 'package:digital_goldmine/View/splash.dart';
-import 'package:digital_goldmine/View/setupproflie.dart';
+// import 'package:digital_goldmine/View/checkin.dart';
+// import 'package:digital_goldmine/View/completeprofile.dart';
+// import 'package:digital_goldmine/View/forgetpassword.dart';
+// import 'package:digital_goldmine/View/login.dart';
+// import 'package:digital_goldmine/View/oneof2.dart';
+// import 'package:digital_goldmine/View/resetpassword.dart';
+// import 'package:digital_goldmine/View/selectavatar.dart';
+// import 'package:digital_goldmine/View/signup.dart';
+// import 'package:digital_goldmine/View/splash.dart';
+// import 'package:digital_goldmine/View/setupproflie.dart';
+// import 'package:digital_goldmine/View/twoof2.dart';
+import 'package:digital_goldmine/View/notificationUI.dart';
+import 'package:digital_goldmine/View/profile.dart';
+// import 'package:digital_goldmine/View/settings.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,7 +38,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark, // Switches default text/icon themes to light so they are visible
         ),
       ),
-      home: const ForgetPassword(),
+      home: const Profile(),
     );
   }
 }

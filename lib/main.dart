@@ -10,6 +10,7 @@
 // import 'package:digital_goldmine/View/setupproflie.dart';
 // import 'package:digital_goldmine/View/twoof2.dart';
 import 'package:digital_goldmine/View/homescreen.dart';
+import 'package:digital_goldmine/View/mainpage.dart';
 import 'package:digital_goldmine/View/notificationUI.dart';
 import 'package:digital_goldmine/View/profile.dart';
 // import 'package:digital_goldmine/View/settings.dart';
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.dark, // Switches default text/icon themes to light so they are visible
         ),
       ),
-      home: const Homescreen(),
+      home: const Mainpage(),
     );
   }
 }

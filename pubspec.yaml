@@ -80,6 +80,8 @@ flutter:
     - Assets/images/twoof2.png
     - Assets/images/firstimage.png
     - Assets/images/secondimage.png
+    - Assets/images/digitalempire.png
+    - Assets/images/book.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
